@@ -1,0 +1,11 @@
+name: 'dbt_learn_repos'
+version: '1.0.0'
+config-version: 2
+
+profile: dbt_learn_repos  # This profile corresponds to the profiles.yml file
+
+source-paths: ["models"]  # Your SQL model directory
+target-path: "target"  # Output directory for compiled models
+clean-targets:
+  - "target"
+  - "dbt_modules"

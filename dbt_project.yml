@@ -1,0 +1,11 @@
+name: 'dbt_learn_repos'
+version: '1.0.0'
+profile: 'dbt_learn_repos'
+target-path: 'target'
+analysis-paths: ['analysis']
+model-paths: ['models']
+test-paths: ['tests']
+data-paths: ['data']  # This is deprecated
+macro-paths: ['macros']
+seeds:
+  quote_columns: false
